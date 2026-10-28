@@ -1,0 +1,11 @@
+store_key,store_id,store_name,city,state,region,store_type,store_size_sqft
+1,S01,BharatMart Connaught Place,New Delhi,Delhi,North,Hypermarket,42000
+2,S02,BharatMart Hazratganj,Lucknow,Uttar Pradesh,North,Supermarket,18000
+3,S03,BharatMart MI Road,Jaipur,Rajasthan,North,Express,6000
+4,S04,BharatMart Andheri,Mumbai,Maharashtra,West,Hypermarket,45000
+5,S05,BharatMart Koregaon Park,Pune,Maharashtra,West,Supermarket,20000
+6,S06,BharatMart CG Road,Ahmedabad,Gujarat,West,Express,7000
+7,S07,BharatMart Indiranagar,Bengaluru,Karnataka,South,Hypermarket,40000
+8,S08,BharatMart T Nagar,Chennai,Tamil Nadu,South,Supermarket,19000
+9,S09,BharatMart Banjara Hills,Hyderabad,Telangana,South,Supermarket,21000
+10,S10,BharatMart Park Street,Kolkata,West Bengal,East,Supermarket,17000

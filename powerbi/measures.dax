@@ -1,0 +1,102 @@
+// =============================================================================
+// BharatMart Power BI measures
+// Table names assumed (rename on import, see POWERBI_GUIDE.md):
+//   Sales          <- vw_sales_fact (PostgreSQL)  or  retail_sales_clean.csv
+//   dim_date, dim_store, dim_product
+//   ForecastEval   <- vw_forecast_vs_actual        (test period, actual vs forecast)
+//   FutureForecast <- future_forecast_28d.csv      (next 28 days)
+// Create a blank table "_Measures" (Enter data -> OK) and add these measures there.
+// dim_date must be marked as a date table: Table tools -> Mark as date table -> full_date
+// =============================================================================
+
+// ---------------------------------------------------------------- core
+Total Revenue = SUM ( Sales[revenue] )
+Total Units = SUM ( Sales[units_sold] )
+Total Profit = SUM ( Sales[profit] )
+Gross Sales = SUM ( Sales[gross_sales] )
+Discount Amount = SUM ( Sales[discount_amount] )
+Profit Margin % = DIVIDE ( [Total Profit], [Total Revenue] )
+Discount % of Gross = DIVIDE ( [Discount Amount], [Gross Sales] )
+Avg Selling Price = DIVIDE ( [Total Revenue], [Total Units] )
+Avg Daily Revenue = AVERAGEX ( VALUES ( dim_date[full_date] ), [Total Revenue] )
+
+// ---------------------------------------------------------------- time intelligence
+Revenue LY = CALCULATE ( [Total Revenue], SAMEPERIODLASTYEAR ( dim_date[full_date] ) )
+Revenue YoY % = DIVIDE ( [Total Revenue] - [Revenue LY], [Revenue LY] )
+Revenue MTD = TOTALMTD ( [Total Revenue], dim_date[full_date] )
+Revenue YTD = TOTALYTD ( [Total Revenue], dim_date[full_date] )
+// Indian financial year ends 31 March
+Revenue FYTD = TOTALYTD ( [Total Revenue], dim_date[full_date], "03-31" )
+Revenue FYTD LY = CALCULATE ( [Revenue FYTD], SAMEPERIODLASTYEAR ( dim_date[full_date] ) )
+
+Revenue 28D Moving Avg =
+AVERAGEX (
+    DATESINPERIOD ( dim_date[full_date], MAX ( dim_date[full_date] ), -28, DAY ),
+    [Total Revenue]
+)
+
+// Same-store sales growth: only stores that sold in both periods
+SSSG % =
+VAR StoresBoth =
+    FILTER (
+        VALUES ( dim_store[store_id] ),
+        [Total Revenue] > 0 && [Revenue LY] > 0
+    )
+RETURN
+    DIVIDE (
+        SUMX ( StoresBoth, [Total Revenue] ) - SUMX ( StoresBoth, [Revenue LY] ),
+        SUMX ( StoresBoth, [Revenue LY] )
+    )
+
+// ---------------------------------------------------------------- stores
+Store Sq Ft = SUMX ( VALUES ( dim_store[store_id] ), CALCULATE ( MAX ( dim_store[store_size_sqft] ) ) )
+Revenue per Sq Ft = DIVIDE ( [Total Revenue], [Store Sq Ft] )
+Store Revenue Rank =
+IF (
+    HASONEVALUE ( dim_store[store_name] ),
+    RANKX ( ALL ( dim_store[store_name] ), [Total Revenue], , DESC, DENSE )
+)
+
+// ---------------------------------------------------------------- products & promotions
+Promo Revenue = CALCULATE ( [Total Revenue], Sales[is_promo] = 1 )
+Promo Revenue Share % = DIVIDE ( [Promo Revenue], [Total Revenue] )
+Avg Units per Day (Promo) =
+AVERAGEX ( FILTER ( Sales, Sales[is_promo] = 1 ), Sales[units_sold] )
+Avg Units per Day (No Promo) =
+AVERAGEX ( FILTER ( Sales, Sales[is_promo] = 0 ), Sales[units_sold] )
+Promo Unit Lift % = DIVIDE ( [Avg Units per Day (Promo)], [Avg Units per Day (No Promo)] ) - 1
+
+// Pareto / ABC: cumulative revenue share of products ranked by revenue
+Cumulative Revenue Share % =
+VAR CurRev = [Total Revenue]
+VAR AllProducts = ALLSELECTED ( dim_product[product_name] )
+RETURN
+    DIVIDE (
+        SUMX ( FILTER ( AllProducts, [Total Revenue] >= CurRev ), [Total Revenue] ),
+        CALCULATE ( [Total Revenue], AllProducts )
+    )
+ABC Class =
+SWITCH (
+    TRUE (),
+    [Cumulative Revenue Share %] <= 0.80, "A",
+    [Cumulative Revenue Share %] <= 0.95, "B",
+    "C"
+)
+
+// ---------------------------------------------------------------- festivals
+Festive Season Revenue = CALCULATE ( [Total Revenue], dim_date[is_festive_season] = TRUE () )
+Festive Uplift x =
+DIVIDE (
+    CALCULATE ( [Avg Daily Revenue], dim_date[is_festive_season] = TRUE () ),
+    CALCULATE ( [Avg Daily Revenue], dim_date[is_festive_season] = FALSE (), dim_date[month] IN { 9, 10, 11 } )
+)
+
+// ---------------------------------------------------------------- ML forecast
+// Filter ForecastEval[model_name] with a slicer (Ensemble vs Seasonal Naive)
+Forecast Units = SUM ( ForecastEval[forecast_units] )
+Actual Units (Test) = SUM ( ForecastEval[actual_units] )
+Abs Error Units = SUM ( ForecastEval[abs_error_units] )
+WAPE % = DIVIDE ( [Abs Error Units], [Actual Units (Test)] )
+Forecast Accuracy % = 1 - [WAPE %]
+Forecast Bias % = DIVIDE ( [Forecast Units] - [Actual Units (Test)], [Actual Units (Test)] )
+Next 28D Forecast Units = SUM ( FutureForecast[forecast_units] )

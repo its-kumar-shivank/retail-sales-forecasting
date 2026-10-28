@@ -1,0 +1,5 @@
+{
+  "test_period_start": "2025-10-01",
+  "oracle_wape_item_store_day": 0.1852154599627025,
+  "note": "Best achievable WAPE given the random noise in the data (true expected demand known)."
+}

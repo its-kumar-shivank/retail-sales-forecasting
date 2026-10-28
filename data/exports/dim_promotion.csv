@@ -1,0 +1,12 @@
+promo_key,discount_pct,is_promo,promo_band
+1,0,False,No Promo
+2,5,True,Light (10-15%)
+3,10,True,Light (10-15%)
+4,15,True,Light (10-15%)
+5,20,True,Medium (20-25%)
+6,25,True,Medium (20-25%)
+7,30,True,Deep (30%+)
+8,35,True,Deep (30%+)
+9,40,True,Deep (30%+)
+10,45,True,Deep (30%+)
+11,50,True,Deep (30%+)

@@ -1,0 +1,18 @@
+{
+  "name": "BharatMart",
+  "dataColors": ["#264653", "#2A9D8F", "#E9C46A", "#F4A261", "#E76F51", "#8D99AE", "#6D597A", "#B56576"],
+  "background": "#FFFFFF",
+  "foreground": "#1D2B33",
+  "tableAccent": "#2A9D8F",
+  "good": "#2A9D8F",
+  "neutral": "#E9C46A",
+  "bad": "#E76F51",
+  "maximum": "#2A9D8F",
+  "center": "#F1F1F1",
+  "minimum": "#E76F51",
+  "textClasses": {
+    "title": {"fontFace": "Segoe UI Semibold", "fontSize": 14, "color": "#1D2B33"},
+    "callout": {"fontFace": "Segoe UI Semibold", "fontSize": 28, "color": "#264653"},
+    "label": {"fontFace": "Segoe UI", "fontSize": 10, "color": "#4A5A63"}
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "raw_rows": 586738,
+  "dates_in_dd_mm_yyyy_format": 5868,
+  "unparseable_dates_dropped": 0,
+  "exact_duplicates_removed": 2338,
+  "duplicate_keys_removed": 0,
+  "category_labels_standardised": 7767,
+  "city_names_standardised": 29358,
+  "missing_store_names_filled": 1948,
+  "missing_prices_filled": 5844,
+  "missing_units_in_raw": 2922,
+  "negative_units_set_to_nan": 249,
+  "extra_zero_typos_corrected": 111,
+  "other_outliers_set_to_nan": 2,
+  "missing_grid_rows_added": 0,
+  "units_imputed_by_interpolation": 3173,
+  "clean_rows": 584400,
+  "date_range": [
+    "2022-01-01",
+    "2025-12-31"
+  ]
+}

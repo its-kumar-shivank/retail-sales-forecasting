@@ -1,0 +1,50 @@
+transaction_date,store_id,store_name,city,state,region,store_type,store_size_sqft,product_id,product_name,category,sub_category,brand,unit_price,unit_cost,discount_pct,is_promo,units_sold,revenue
+2025-01-05,S01,BharatMart Connaught Place,New Delhi,Delhi,North,Hypermarket,42000,P01,Basmati Rice 5kg,Grocery & Staples,Rice & Grains,FreshFarm,649.0,488.25,0,0,62.0,40238.0
+2025-01-05,S01,BharatMart Connaught Place,New Delhi,Delhi,North,Hypermarket,42000,P03,Toor Dal 1kg,Grocery & Staples,Pulses,DesiHarvest,159.0,121.73,0,0,115.0,18285.0
+2025-01-05,S01,BharatMart Connaught Place,New Delhi,Delhi,North,Hypermarket,42000,P09,Cola 2L,Beverages & Snacks,Soft Drinks,FizzUp,99.0,69.30,10,1,142.0,12661.8
+2025-01-05,S01,BharatMart Connaught Place,New Delhi,Delhi,North,Hypermarket,42000,P11,Potato Chips 150g,Beverages & Snacks,Chips,CrunchCo,57.0,40.99,0,0,131.0,7467.0
+2025-01-05,S01,BharatMart Connaught Place,New Delhi,Delhi,North,Hypermarket,42000,P22,Running Shoes,Apparel,Footwear,UrbanStride,2499.0,1574.37,0,0,5.0,12495.0
+05-01-2025,S01,BharatMart Connaught Place,New Delhi,Delhi,North,Hypermarket,42000,P30,Bluetooth Earbuds,Electronics,Audio,SoundWave,1299.0,844.35,0,0,8.0,10392.0
+2025-01-05,S01,BharatMart Connaught Place,New Delhi,Delhi,North,Hypermarket,42000,P35,Stainless Steel Bottle 1L,Home & Kitchen,Kitchen,HomePure,499.0,294.41,0,0,18.0,8982.0
+2025-01-06,S01,BharatMart Connaught Place,New Delhi,Delhi,North,Hypermarket,42000,P01,Basmati Rice 5kg,Grocery & Staples,Rice & Grains,FreshFarm,649.0,488.25,0,0,58.0,37642.0
+2025-01-06,S01,BharatMart Connaught Place,New Delhi,Delhi,North,Hypermarket,42000,P04,Refined Sunflower Oil 1L,Grocery & Staples,Edible Oil,GoldenDrop,145.0,111.65,0,0,140.0,20300.0
+2025-01-06,S01,BharatMart Connaught Place,New Delhi,Delhi,North,Hypermarket,42000,P11,Potato Chips 150g,Beverages & Snacks,Chips,CrunchCo,57.0,40.99,0,0,,
+2025-01-06,S01,BharatMart Connaught Place,New Delhi,Delhi,North,Hypermarket,42000,P17,Shampoo 400ml,Personal Care,Hair Care,PureGlow,349.0,223.36,20,1,45.0,12564.0
+2025-01-05,S04,BharatMart Andheri,Mumbai,Maharashtra,West,Hypermarket,45000,P01,Basmati Rice 5kg,Grocery & Staples,Rice & Grains,FreshFarm,649.0,488.25,0,0,70.0,45430.0
+2025-01-05,S04,BharatMart Andheri,Bombay,Maharashtra,West,Hypermarket,45000,P03,Toor Dal 1kg,Grocery & Staples,Pulses,DesiHarvest,159.0,121.73,0,0,120.0,19080.0
+2025-01-05,S04,BharatMart Andheri,Mumbai,Maharashtra,West,Hypermarket,45000,P09,Cola 2L,Beverages & Snacks,Soft Drinks,FizzUp,99.0,69.30,0,0,98.0,9702.0
+2025-01-05,S04,BharatMart Andheri,Mumbai,Maharashtra,West,Hypermarket,45000,P15,Kaju Katli Box 500g,Beverages & Snacks,Sweets,MithaasHouse,499.0,339.32,0,0,22.0,10978.0
+2025-01-05,S04,BharatMart Andheri,Mumbai,Maharashtra,West,Hypermarket,45000,P22,Running Shoes,Apparel,Footwear,UrbanStride,2499.0,1574.37,15,1,12.0,25489.8
+2025-01-05,S04,BharatMart Andheri,Mumbai,Maharashtra,West,Hypermarket,45000,P30,Bluetooth Earbuds,ELECTRONICS,Audio,SoundWave,1299.0,844.35,0,0,10.0,12990.0
+2025-01-05,S04,BharatMart Andheri,Mumbai,Maharashtra,West,Hypermarket,45000,P36,Non-Stick Tawa,Home & Kitchen,Cookware,HomePure,699.0,412.41,0,0,14.0,9786.0
+2025-01-06,S04,BharatMart Andheri,Mumbai,Maharashtra,West,Hypermarket,45000,P01,Basmati Rice 5kg,Grocery & Staples,Rice & Grains,FreshFarm,649.0,488.25,0,0,65.0,42185.0
+2025-01-06,S04,BharatMart Andheri,Mumbai,Maharashtra,West,Hypermarket,45000,P11,Potato Chips 150g,Beverages & Snacks,Chips,CrunchCo,57.0,40.99,0,0,145.0,8265.0
+2025-01-06,S04,BharatMart Andheri,Mumbai,Maharashtra,West,Hypermarket,45000,P17,Shampoo 400ml,Personal Care,Hair Care,PureGlow,,223.36,0,0,38.0,
+2025-01-05,S07,BharatMart Indiranagar,Bengaluru,Karnataka,South,Hypermarket,40000,P01,Basmati Rice 5kg,Grocery & Staples,Rice & Grains,FreshFarm,649.0,488.25,0,0,55.0,35695.0
+2025-01-05,S07,BharatMart Indiranagar,Bengaluru,Karnataka,South,Hypermarket,40000,P05,Iodised Salt 1kg,Grocery & Staples,Spices & Salt,DesiHarvest,28.0,17.64,0,0,155.0,4340.0
+2025-01-05,S07,BharatMart Indiranagar,Bengaluru,Karnataka,South,Hypermarket,40000,P09,Cola 2L,Beverages & Snacks,Soft Drinks,FizzUp,99.0,69.30,10,1,125.0,11137.5
+05-01-2025,S07,BharatMart Indiranagar,Bengaluru,Karnataka,South,Hypermarket,40000,P13,Assam Tea 500g,Beverages & Snacks,Tea & Coffee,ChaiGhar,265.0,172.25,0,0,58.0,15370.0
+2025-01-05,S07,BharatMart Indiranagar,Bengaluru,Karnataka,South,Hypermarket,40000,P20,Men's Polo T-Shirt,Apparel,Tops,UrbanStride,799.0,439.45,0,0,9.0,7191.0
+2025-01-05,S07,BharatMart Indiranagar,Bengaluru,Karnataka,South,Hypermarket,40000,P30,Bluetooth Earbuds,Electronics,Audio,SoundWave,1299.0,844.35,20,1,15.0,15588.0
+2025-01-05,S07,BharatMart Indiranagar,Bengaluru,Karnataka,South,Hypermarket,40000,P33,Power Bank 10000mAh,Electronics,Accessories,SmartLife,999.0,649.35,0,0,7.0,6993.0
+2025-01-06,S07,BharatMart Indiranagar,Bengaluru,Karnataka,South,Hypermarket,40000,P01,Basmati Rice 5kg,Grocery & Staples,Rice & Grains,FreshFarm,649.0,488.25,0,0,52.0,33748.0
+2025-01-06,S07,BharatMart Indiranagar,Bengaluru,Karnataka,South,Hypermarket,40000,P09,Cola 2L,Beverages & Snacks,Soft Drinks,FizzUp,99.0,69.30,0,0,88.0,8712.0
+2025-01-05,S10,BharatMart Park Street,Kolkata,West Bengal,East,Supermarket,17000,P01,Basmati Rice 5kg,Grocery & Staples,Rice & Grains,FreshFarm,649.0,488.25,0,0,35.0,22715.0
+2025-01-05,S10,BharatMart Park Street,Kolkata,West Bengal,East,Supermarket,17000,P06,Sugar 1kg,Grocery & Staples,Sugar,SweetLeaf,48.0,33.60,0,0,88.0,4224.0
+2025-01-05,S10,BharatMart Park Street,Kolkata,West Bengal,East,Supermarket,17000,P10,Mango Drink 1.2L,Beverages & Snacks,Juices,TropiCool,75.0,48.75,0,0,42.0,3150.0
+2025-01-05,S10,BharatMart Park Street,Kolkata,West Bengal,East,Supermarket,17000,P14,Instant Coffee 100g,Beverages & Snacks,Tea & Coffee,BrewBean,330.0,214.50,0,0,16.0,5280.0
+2025-01-05,S10,BharatMart Park Street,Kolkata,West Bengal,East,Supermarket,17000,P18,Neem Soap Pack of 4,Personal Care,Bath,PureGlow,184.0,113.53,0,0,25.0,4600.0
+2025-01-05,S10,BharatMart Park Street,Kolkata,West Bengal,East,Supermarket,17000,P22,Running Shoes,Apparel,Footwear,UrbanStride,2499.0,1574.37,0,0,-3.0,-7497.0
+2025-01-05,S10,BharatMart Park Street,Kolkata,West Bengal,East,Supermarket,17000,P30,Bluetooth Earbuds,Electronics,Audio,SoundWave,1299.0,844.35,0,0,4.0,5196.0
+2025-01-05,S10,BharatMart Park Street,Kolkata,West Bengal,East,Supermarket,17000,P35,Stainless Steel Bottle 1L,Home & Kitchen,Kitchen,HomePure,499.0,294.41,0,0,10.0,4990.0
+2025-01-06,S10,BharatMart Park Street,Kolkata,West Bengal,East,Supermarket,17000,P01,Basmati Rice 5kg,Grocery & Staples,Rice & Grains,FreshFarm,649.0,488.25,0,0,33.0,21417.0
+2025-01-06,S10,BharatMart Park Street,Kolkata,West Bengal,East,Supermarket,17000,P11,Potato Chips 150g,Beverages & Snacks,Chips,CrunchCo,57.0,40.99,0,0,750.0,42750.0
+2025-01-05,S03,BharatMart MI Road,Jaipur,Rajasthan,North,Express,6000,P01,Basmati Rice 5kg,Grocery & Staples,Rice & Grains,FreshFarm,649.0,488.25,0,0,20.0,12980.0
+2025-01-05,S03,BharatMart MI Road,Jaipur,Rajasthan,North,Express,6000,P05,Iodised Salt 1kg,Grocery & Staples,Spices & Salt,DesiHarvest,28.0,17.64,0,0,50.0,1400.0
+2025-01-05,S03,BharatMart MI Road,Jaipur,Rajasthan,North,Express,6000,P09,Cola 2L,Beverages & Snacks,Soft Drinks,FizzUp,99.0,69.30,0,0,30.0,2970.0
+2025-01-05,S03,BharatMart MI Road,Jaipur,Rajasthan,North,Express,6000,P17,Shampoo 400ml,Personal Care,Hair Care,PureGlow,349.0,223.36,0,0,12.0,4188.0
+2025-01-05,S03,BharatMart MI Road,Jaipur,Rajasthan,North,Express,6000,P20,Men's Polo T-Shirt,Apparel,Tops,UrbanStride,799.0,439.45,0,0,3.0,2397.0
+2025-01-06,S03,BharatMart MI Road,Jaipur,Rajasthan,North,Express,6000,P01,Basmati Rice 5kg,Grocery & Staples,Rice & Grains,FreshFarm,649.0,488.25,0,0,18.0,11682.0
+2025-01-06,S03,BharatMart MI Road,Jaipur,Rajasthan,North,Express,6000,P03,Toor Dal 1kg,Grocery & Staples,Pulses,DesiHarvest,159.0,121.73,0,0,38.0,6042.0
+2025-01-05,S04,BharatMart Andheri,Mumbai,Maharashtra,West,Hypermarket,45000,P01,Basmati Rice 5kg,Grocery & Staples,Rice & Grains,FreshFarm,649.0,488.25,0,0,70.0,45430.0
+2025-01-05,S01,BharatMart Connaught Place,New Delhi,Delhi,North,Hypermarket,42000,P09,Cola 2L,Beverages & Snacks,Soft Drinks,FizzUp,99.0,69.30,10,1,142.0,12661.8

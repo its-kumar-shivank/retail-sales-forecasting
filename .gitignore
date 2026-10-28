@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+models/_checkpoints/
+# Large data files: GitHub rejects files over 100 MB. They are fully reproducible
+# (fixed random seed) with: python src/generate_data.py && python src/preprocess.py
+data/raw/*.csv
+data/processed/*.csv
+data/processed/*.pkl

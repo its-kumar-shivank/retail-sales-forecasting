@@ -1,0 +1,41 @@
+product_key,product_id,product_name,category,sub_category,brand
+1,P01,Basmati Rice 5kg,Grocery & Staples,Rice & Grains,FreshFarm
+2,P02,Whole Wheat Atta 10kg,Grocery & Staples,Flour,FreshFarm
+3,P03,Toor Dal 1kg,Grocery & Staples,Pulses,DesiHarvest
+4,P04,Refined Sunflower Oil 1L,Grocery & Staples,Edible Oil,GoldenDrop
+5,P05,Iodised Salt 1kg,Grocery & Staples,Spices & Salt,DesiHarvest
+6,P06,Sugar 1kg,Grocery & Staples,Sugar,SweetLeaf
+7,P07,Garam Masala 100g,Grocery & Staples,Spices & Salt,MasalaKing
+8,P08,Masoor Dal 1kg,Grocery & Staples,Pulses,DesiHarvest
+9,P09,Cola 2L,Beverages & Snacks,Soft Drinks,FizzUp
+10,P10,Mango Drink 1.2L,Beverages & Snacks,Juices,TropiCool
+11,P11,Potato Chips 150g,Beverages & Snacks,Chips,CrunchCo
+12,P12,Namkeen Mixture 400g,Beverages & Snacks,Namkeen,CrunchCo
+13,P13,Assam Tea 500g,Beverages & Snacks,Tea & Coffee,ChaiGhar
+14,P14,Instant Coffee 100g,Beverages & Snacks,Tea & Coffee,BrewBean
+15,P15,Kaju Katli Box 500g,Beverages & Snacks,Sweets,MithaasHouse
+16,P16,Cream Biscuits 300g,Beverages & Snacks,Biscuits,CrunchCo
+17,P17,Herbal Shampoo 340ml,Personal Care,Hair Care,PureGlow
+18,P18,Neem Soap Pack of 4,Personal Care,Bath,PureGlow
+19,P19,Toothpaste 200g,Personal Care,Oral Care,SmileBright
+20,P20,Moisturising Lotion 400ml,Personal Care,Skin Care,SilkSkin
+21,P21,Face Wash 150ml,Personal Care,Skin Care,SilkSkin
+22,P22,Hair Oil 300ml,Personal Care,Hair Care,PureGlow
+23,P23,Non-Stick Tawa,Home & Kitchen,Cookware,KitchenPro
+24,P24,Pressure Cooker 5L,Home & Kitchen,Cookware,KitchenPro
+25,P25,Steel Water Bottle 1L,Home & Kitchen,Storage,UrbanBasics
+26,P26,Bedsheet Double,Home & Kitchen,Furnishing,HomeNest
+27,P27,LED Diya Lights 10m,Home & Kitchen,Decor,HomeNest
+28,P28,Storage Containers Set,Home & Kitchen,Storage,UrbanBasics
+29,P29,Bluetooth Earbuds,Electronics,Audio,SonicWave
+30,P30,Power Bank 20000mAh,Electronics,Mobile Accessories,VoltEdge
+31,P31,Mixer Grinder 750W,Electronics,Kitchen Appliances,KitchenPro
+32,P32,Electric Kettle 1.5L,Electronics,Kitchen Appliances,VoltEdge
+33,P33,Smart LED Bulb,Electronics,Lighting,VoltEdge
+34,P34,Fast Charger 33W,Electronics,Mobile Accessories,VoltEdge
+35,P35,Men's Cotton Kurta,Apparel,Ethnic Wear,Rangrez
+36,P36,Women's Printed Saree,Apparel,Ethnic Wear,Rangrez
+37,P37,Kids T-Shirt Pack of 3,Apparel,Kidswear,UrbanBasics
+38,P38,Men's Denim Jeans,Apparel,Western Wear,UrbanBasics
+39,P39,Women's Kurti,Apparel,Ethnic Wear,Rangrez
+40,P40,Cotton Socks Pack of 5,Apparel,Innerwear,UrbanBasics
